@@ -26,22 +26,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="myTimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRS-wS-nHR">
+                                <rect key="frame" x="115" y="570" width="190" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlU-vP-MnB">
+                                <rect key="frame" x="149" y="628" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="buttonCliecked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hrU-FC-kIM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sdB-YU-TAn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="PEQ-Sf-ap4"/>
-                            <constraint firstItem="sdB-YU-TAn" firstAttribute="centerX" secondItem="mhX-xH-CBd" secondAttribute="centerX" id="QmK-xQ-fl3"/>
-                            <constraint firstItem="sdB-YU-TAn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="79" id="RPX-sI-nva"/>
-                            <constraint firstItem="sdB-YU-TAn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wwu-Pk-raK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sdB-YU-TAn" secondAttribute="bottom" constant="347" id="h01-cp-agy"/>
-                            <constraint firstItem="mhX-xH-CBd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="qFm-b1-zsD"/>
-                            <constraint firstItem="mhX-xH-CBd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="441" id="yBK-ws-gxt"/>
+                            <constraint firstItem="mhX-xH-CBd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="441" id="5wu-3B-DOJ"/>
+                            <constraint firstItem="sdB-YU-TAn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="79" id="75Y-ev-Kiy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FRS-wS-nHR" secondAttribute="bottom" constant="271" id="BPk-h5-2Mt"/>
+                            <constraint firstItem="sdB-YU-TAn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bsh-Ub-qoO"/>
+                            <constraint firstItem="sdB-YU-TAn" firstAttribute="centerX" secondItem="mhX-xH-CBd" secondAttribute="centerX" id="JBm-br-Gxy"/>
+                            <constraint firstItem="mhX-xH-CBd" firstAttribute="centerX" secondItem="FRS-wS-nHR" secondAttribute="centerX" id="PIF-Xr-XXZ"/>
+                            <constraint firstItem="mhX-xH-CBd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="RXa-e6-Ue4"/>
+                            <constraint firstItem="FRS-wS-nHR" firstAttribute="top" secondItem="mhX-xH-CBd" secondAttribute="bottom" constant="64" id="Uzs-Ls-9b6"/>
+                            <constraint firstItem="FRS-wS-nHR" firstAttribute="top" secondItem="sdB-YU-TAn" secondAttribute="bottom" constant="55" id="cu3-Vl-egz"/>
+                            <constraint firstItem="sdB-YU-TAn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="fa8-Cg-Att"/>
+                            <constraint firstItem="FRS-wS-nHR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="185" id="hzF-au-4ID"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="sdB-YU-TAn" id="86T-hT-DBP"/>
                         <outlet property="myLabel" destination="mhX-xH-CBd" id="kHH-yG-KpL"/>
+                        <outlet property="myTimer" destination="FRS-wS-nHR" id="H8j-wf-El6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
