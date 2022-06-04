@@ -17,13 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="james" translatesAutoresizingMaskIntoConstraints="NO" id="sdB-YU-TAn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="james" translatesAutoresizingMaskIntoConstraints="NO" id="sdB-YU-TAn">
                                 <rect key="frame" x="38" y="123" width="337" height="392"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="james hetfield" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhX-xH-CBd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="james hetfield" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhX-xH-CBd">
                                 <rect key="frame" x="49" y="485" width="314" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -31,6 +29,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sdB-YU-TAn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="PEQ-Sf-ap4"/>
+                            <constraint firstItem="sdB-YU-TAn" firstAttribute="centerX" secondItem="mhX-xH-CBd" secondAttribute="centerX" id="QmK-xQ-fl3"/>
+                            <constraint firstItem="sdB-YU-TAn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="79" id="RPX-sI-nva"/>
+                            <constraint firstItem="sdB-YU-TAn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wwu-Pk-raK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sdB-YU-TAn" secondAttribute="bottom" constant="347" id="h01-cp-agy"/>
+                            <constraint firstItem="mhX-xH-CBd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="qFm-b1-zsD"/>
+                            <constraint firstItem="mhX-xH-CBd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="441" id="yBK-ws-gxt"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="sdB-YU-TAn" id="86T-hT-DBP"/>
